@@ -52,6 +52,7 @@ main {
 }
 
 .nav input:focus {
+  border: 0;
   outline-color: var(--gray);
   outline-style: solid;
 }
@@ -69,16 +70,18 @@ main {
 .site-search input {
   border: 0;
   border-bottom: 1px solid var(--gray);
-  border-radius: 0;
+}
+
+.site-search input:focus {
+  border-bottom: 1px solid var(--gray);
+  outline: none;
 }
 
 .site-search button {
   background: transparent;
   border: 0;
-  border-bottom: 1px solid var(--gray);
   -webkit-text-stroke: 1px var(--gray);
-  border-radius: 0 4px 4px 0;
-  border-left: 0;
+
 }
 
 #shop-items {
